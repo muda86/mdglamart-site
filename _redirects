@@ -1,0 +1,22 @@
+# Cloudflare Pages redirects
+# Format: <source>  <destination>  <status>
+# Docs: https://developers.cloudflare.com/pages/configuration/redirects/
+
+# --- Apex consolidation (handled at DNS/Pages custom-domain level too) ---
+# marylandglamart.com is an alias domain on the same Pages project; once both
+# custom domains are attached in the Cloudflare dashboard, requests resolve to
+# the same site. If you later want marylandglamart.com to 301 to mdglamart.com
+# as the canonical, uncomment the line below and set the domain in Pages.
+# https://marylandglamart.com/*  https://mdglamart.com/:splat  301
+
+# --- Friendly shortlinks to the Etsy shop (carry UTM for tracking) ---
+/shop      https://www.etsy.com/shop/MarylandGlamArt?utm_source=mdglamart&utm_medium=shortlink&utm_campaign=shop   302
+/etsy      https://www.etsy.com/shop/MarylandGlamArt?utm_source=mdglamart&utm_medium=shortlink&utm_campaign=etsy   302
+
+# --- Social shortlinks ---
+/pinterest   https://www.pinterest.com/mdglamart    302
+/instagram   https://www.instagram.com/mdglamart    302
+/tiktok      https://www.tiktok.com/@mdglamart       302
+
+# --- Phase 2 reserved (native product pages) ---
+# /product/*  will be served by Pages Functions / static product pages.

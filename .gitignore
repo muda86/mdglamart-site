@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Claude Code local files (not for the public repo)
+.claude/
+CLAUDE.md
+
+# Full-resolution image archive — kept local only (too heavy for the repo)
+images/originals/
+
+# Tooling
+node_modules/
+__pycache__/
