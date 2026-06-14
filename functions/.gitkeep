@@ -1,0 +1,5 @@
+# Reserved for Phase 1 email capture + Phase 2 Stripe Pages Functions.
+# Planned files:
+#   functions/api/subscribe.js            (Phase 1 — Cloudflare KV email capture)
+#   functions/api/create-payment-intent.js (Phase 2 — Stripe PaymentIntent)
+#   functions/api/webhook.js               (Phase 2 — Stripe webhook handler)
